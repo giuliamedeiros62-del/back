@@ -1,0 +1,182 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1764769685260
+  modified: 1764769685260
+  description: ""
+collection:
+  - url: http://localhost:3000/1
+    name: Teste API
+    meta:
+      id: req_93c4a8eb14354ff6af9fa8cd0ff1a74d
+      created: 1778539597748
+      modified: 1779747935622
+      isPrivate: false
+      description: ""
+      sortKey: -1778539597748
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/users
+    name: "Listagem usuários "
+    meta:
+      id: req_38a99970798b4e738dede419527e00d9
+      created: 1778540159945
+      modified: 1778540191345
+      isPrivate: false
+      description: ""
+      sortKey: -1778539597698
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/users
+    name: Criar usuário
+    meta:
+      id: req_69cc0d862f1746fa8baf468821d7f2f3
+      created: 1778540971305
+      modified: 1778541502334
+      isPrivate: false
+      description: ""
+      sortKey: -1778539597648
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        { 
+        "name" : "josé"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/users/1
+    name: Busca usuário por ID
+    meta:
+      id: req_d88308519e7144d39545059fb6a08785
+      created: 1779150071152
+      modified: 1779152049555
+      isPrivate: false
+      description: ""
+      sortKey: -1778539597673
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/users/1
+    name: Atualizar usuário
+    meta:
+      id: req_a6be9fe3e25f4465ab790c39ec3426fd
+      created: 1779750741525
+      modified: 1779755122295
+      isPrivate: false
+      description: ""
+      sortKey: -1778539597598
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": 1,
+        	"name": ""
+        }
+    parameters:
+      - name: "{}"
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/users/1
+    name: Deletar Usuário
+    meta:
+      id: req_51e50ed194ab4dfabcaea6e3f642be7c
+      created: 1779757313971
+      modified: 1779757319323
+      isPrivate: false
+      description: ""
+      sortKey: -1778539597660.5
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1780352802336
+    modified: 1780352802336
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1780352802334
+    modified: 1780352802334
+    isPrivate: false
